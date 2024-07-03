@@ -101,7 +101,7 @@ public class APITests {
                 .get("/api/unknown/23")
                 .then()
                 .statusCode(404)
-                .body(equalTo("{}"));  // Check if the response body is an empty JSON object
+                .body(equalTo("{}")); 
     }
 
 
@@ -160,7 +160,7 @@ public class APITests {
                 .when()
                 .delete("/api/users/2")
                 .then()
-                .statusCode(204); // Assuming status code 204 for successful deletion
+                .statusCode(204); 
     }
 
 
